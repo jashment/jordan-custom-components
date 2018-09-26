@@ -46,6 +46,7 @@
     </v-toolbar>
     <v-content>
       <HelloWorld/>
+      <customComp newMsg="Wubba Lubba Dub Dub"/>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -70,7 +71,13 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from './components/HelloWorld.vue'
+import customComp from './components/customComp.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import ServerDetails from './components/ServerDetails.vue'
+import Servers from './components/Servers.vue'
+
 
 export default {
   name: 'App',
