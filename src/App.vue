@@ -46,7 +46,14 @@
     </v-toolbar>
     <v-content>
       <HelloWorld/>
-      <customComp newMsg="Wubba Lubba Dub Dub"/>
+      <ja-customComp newMsg="Wubba Lubba Dub Dub"/>
+      <hr>
+      <ja-header></ja-header>
+      <hr>
+        <ja-servers></ja-servers>
+        <ja-serverDetails></ja-serverDetails>
+        <hr>
+      <ja-footer></ja-footer>
     </v-content>
     <v-navigation-drawer
       temporary
@@ -83,11 +90,11 @@ export default {
   name: 'App',
   components: {
     HelloWorld,
-    customComp,
-    Header,
-    Servers,
-    ServerDetails,
-    Footer
+    'ja-customComp': customComp,
+    'ja-header': Header,
+    'ja-servers': Servers,
+    'ja-serverDetails': ServerDetails,
+    'ja-footer': Footer
   },
   data () {
     return {
@@ -106,3 +113,7 @@ export default {
   }
 }
 </script>
+
+<style>
+
+</style>
