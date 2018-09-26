@@ -82,7 +82,12 @@ import Servers from './components/Servers.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    customComp,
+    Header,
+    Servers,
+    ServerDetails,
+    Footer
   },
   data () {
     return {
